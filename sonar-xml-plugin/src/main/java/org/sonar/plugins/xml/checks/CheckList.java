@@ -22,7 +22,10 @@ package org.sonar.plugins.xml.checks;
 import java.util.Arrays;
 import java.util.List;
 import org.sonar.plugins.xml.checks.ejb.DefaultInterceptorsLocationCheck;
+import org.sonar.plugins.xml.checks.ejb.InterceptorExclusionsCheck;
 import org.sonar.plugins.xml.checks.hibernate.DatabaseSchemaUpdateCheck;
+import org.sonar.plugins.xml.checks.maven.DisallowedDependenciesCheck;
+import org.sonar.plugins.xml.checks.maven.GroupIdNamingConventionCheck;
 import org.sonar.plugins.xml.checks.security.HardcodedCredentialsCheck;
 import org.sonar.plugins.xml.checks.security.android.AndroidExportedContentPermissionsCheck;
 import org.sonar.plugins.xml.checks.security.android.AndroidPermissionsCheck;
@@ -30,6 +33,7 @@ import org.sonar.plugins.xml.checks.security.android.DebugFeatureCheck;
 import org.sonar.plugins.xml.checks.security.web.BasicAuthenticationCheck;
 import org.sonar.plugins.xml.checks.security.web.CrossOriginResourceSharingCheck;
 import org.sonar.plugins.xml.checks.security.web.HttpOnlyOnCookiesCheck;
+import org.sonar.plugins.xml.checks.spring.DefaultMessageListenerContainerCheck;
 import org.sonar.plugins.xml.checks.struts.ActionNumberCheck;
 import org.sonar.plugins.xml.checks.security.web.ValidationFiltersCheck;
 
@@ -47,9 +51,12 @@ public class CheckList {
       CrossOriginResourceSharingCheck.class,
       DatabaseSchemaUpdateCheck.class,
       DefaultInterceptorsLocationCheck.class,
+      DefaultMessageListenerContainerCheck.class,
       DebugFeatureCheck.class,
+      GroupIdNamingConventionCheck.class,
       TabCharacterCheck.class,
       HardcodedCredentialsCheck.class,
+      InterceptorExclusionsCheck.class,
       ParsingErrorCheck.class,
       NewlineCheck.class,
       IndentationCheck.class,
@@ -60,6 +67,7 @@ public class CheckList {
       BasicAuthenticationCheck.class,
       FixmeCommentCheck.class,
       ValidationFiltersCheck.class,
+      DisallowedDependenciesCheck.class,
       CommentedOutCodeCheck.class
     );
   }
