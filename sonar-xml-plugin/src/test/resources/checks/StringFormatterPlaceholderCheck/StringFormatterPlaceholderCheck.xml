@@ -1,0 +1,25 @@
+<resources>
+   <string name="app_name">Solis</string>
+
+   <string name="net_error_msg">La red es débil</string>
+   <string name="login">Iniciar sesión</string>
+   <string name="regis">Registrar</string>
+   <string name="sure">Determinado</string>
+   <string name="cancel">Cancelar</string>
+   <string name="tip">Pista</string>
+   <string name="complete">Completa</string>
+   <string name="guanlian">Relacionados</string>
+   <string name="login_text">Hola, \nBienvenido a Solis Technology</string>
+   <string name="user_login">Inicio de sesión del propietario</string>
+   <string name="bind_acount">Cuenta vinculada</string>
+   <string name="regis_succ">Registrado exitosamente</string>
+   <!-- Noncompliant@+1 -->
+   <string name="user_reset">Restablecer % s contraseña</string>
+   <string name="user_reset_succ">Restablecimiento de contraseña exitoso</string>
+   <string name="login_now">Inicio de sesión</string>
+   <string name="tv_regis_user">%1$dNombre de usuario</string>
+   <string name="tv_bind_third">Nombre de usuario / correo electrónico</string>
+   <string name="tv_login_text">Nombre de usuario / correo electrónico / número de teléfono móvil</string>
+
+
+</resources>

@@ -41,10 +41,10 @@ public class Xml extends AbstractLanguage {
   private static final String XML_LANGUAGE_NAME = "XML";
 
   public static final String XML_RESOURCE_PATH = "org/sonar/l10n/xml/rules/xml";
-  public static final String REPOSITORY_KEY = "xml";
-  public static final String REPOSITORY_NAME = "SonarAnalyzer";
+  public static final String REPOSITORY_KEY = "custom-xml";
+  public static final String REPOSITORY_NAME = "Custom XML";
 
-  public static final String SONAR_WAY_PROFILE_NAME = "Sonar way";
+  public static final String SONAR_WAY_PROFILE_NAME = "custom";
   public static final String SONAR_WAY_PATH = "org/sonar/l10n/xml/rules/xml/Sonar_way_profile.json";
 
   private Configuration configuration;

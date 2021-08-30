@@ -25,7 +25,7 @@ import org.sonar.api.resources.Qualifiers;
 
 public final class XmlPlugin implements Plugin {
 
-  public static final String FILE_SUFFIXES_KEY = "sonar.xml.file.suffixes";
+  public static final String FILE_SUFFIXES_KEY = "sonar.custom-xml.file.suffixes";
 
   @Override
   public void define(Context context) {
@@ -38,7 +38,7 @@ public final class XmlPlugin implements Plugin {
         .category("XML")
         .onQualifiers(Qualifiers.PROJECT)
         .build(),
-      Xml.class,
+      //Xml.class,
       XmlRulesDefinition.class,
       XmlSonarWayProfile.class,
       XmlSensor.class);

@@ -19,18 +19,15 @@
  */
 package org.sonar.plugins.xml.checks;
 
-import java.util.Arrays;
-import java.util.List;
+import org.junit.jupiter.api.Test;
+import org.sonarsource.analyzer.commons.xml.checks.SonarXmlCheckVerifier;
 
-public class CheckList {
+import java.util.regex.Pattern;
 
-  private CheckList() {
+class StringFormatterPlaceholderCheckTest {
+
+  @Test
+  void test() {
+    SonarXmlCheckVerifier.verifyIssues("StringFormatterPlaceholderCheck.xml", new StringFormatterPlaceholderCheck());
   }
-
-  public static List<Class<?>> getCheckClasses() {
-    return Arrays.asList(
-      StringFormatterPlaceholderCheck.class
-    );
-  }
-
 }

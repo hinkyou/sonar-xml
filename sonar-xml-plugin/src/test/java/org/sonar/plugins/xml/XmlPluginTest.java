@@ -35,7 +35,7 @@ class XmlPluginTest {
   void count_extensions() {
     Plugin.Context context = new Plugin.Context(SonarRuntimeImpl.forSonarQube(Version.create(7, 9), SonarQubeSide.SERVER, SonarEdition.COMMUNITY));
     new XmlPlugin().define(context);
-    assertThat(context.getExtensions()).as("Number of extensions for SQ 7.9").hasSize(5);
+    assertThat(context.getExtensions()).as("Number of extensions for SQ 7.9").hasSize(4);
   }
 
 }

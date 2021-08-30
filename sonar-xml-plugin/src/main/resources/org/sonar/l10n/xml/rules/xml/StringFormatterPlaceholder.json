@@ -1,0 +1,16 @@
+{
+  "title": "%占位符后有空白字符，请检查核对",
+  "type": "CODE_SMELL",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "5min"
+  },
+  "tags": [
+    "placeholder"
+  ],
+  "defaultSeverity": "Major",
+  "ruleSpecification": "CUSTOM-XML-1",
+  "sqKey": "CX1",
+  "scope": "All"
+}

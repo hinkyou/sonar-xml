@@ -34,7 +34,7 @@ public final class XmlRulesDefinition implements RulesDefinition {
     // add the new checks
     ruleMetadataLoader.addRulesByAnnotatedClass(repository, CheckList.getCheckClasses());
 
-    repository.rule("XPathCheck").setTemplate(true);
+    //repository.rule("XPathCheck").setTemplate(true);
     repository.done();
   }
 }
